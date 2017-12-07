@@ -1,0 +1,9 @@
+// this is single line comment
+/*
+  this is multiple line comment
+*/
+ 
+ This file is used as input file for remove_comment.l file
+
+
+// this is single line comment

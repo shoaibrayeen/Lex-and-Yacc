@@ -9,11 +9,12 @@ Lex source is a table of regular expressions and corresponding program fragments
 ### Mac : brew install flex
 
 ## Compile Your Lex Program
-### lex example.l
-### gcc -o example lex.yy.c
-###    ./example
+```
+    lex example.l
+    gcc -o example lex.yy.c -ll
+    ./example
 
-
+```
 
 # Yacc
 ### Yacc: Yet Another Compiler-Compiler
@@ -35,10 +36,10 @@ The input subroutine produced by Yacc calls a user-supplied routine to return th
 
 
 ## Compile the lex and the yacc programs together (assuming that lex tokenizes the input and passes the tokens to yacc)
-
-### lex example.l
-### yacc -d example.y
-### gcc lex.yy.c y.tab.c -ll -ly -o example
-### ./example
-
+```
+    lex example.l
+    yacc -d example.y
+    gcc lex.yy.c y.tab.c -ll -ly -o example
+    ./example
+```
 

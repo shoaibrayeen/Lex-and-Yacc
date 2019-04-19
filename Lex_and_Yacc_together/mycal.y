@@ -55,8 +55,9 @@ struct symtab *symlook(char* s){
 			sp->name=strdup(s);
 			return sp;
 		}
-		yyerror();
+		
 	}
+	yyerror();
 }
 int yyerror()
 {
